@@ -2,13 +2,13 @@ service: serverless-mnist
  
 provider:
   name: aws #cloud provider
-  region: ap-south-1 #region (mumbai)
-  memorySize: 10240 #memory usage
-  timeout: 300 
+  region: ap-northeast-1 #region (mumbai)
+  memorySize: 5124 #memory usage
+  timeout: 300
 
 functions:
-  mnist:
-    image: 006547668672.dkr.ecr.ap-south-1.amazonaws.com/mnist-serverless:latest 
+  cifar:
+    image: 027175241301.dkr.ecr.ap-northeast-1.amazonaws.com/cifar-serverless-v1:latest
     events:
       - http:
           path: inference 
