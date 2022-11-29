@@ -1,9 +1,11 @@
-service: serverless-mnist
+org: akshatthakar
+app: serverless-cifar
+service: serverless-cifar
  
 provider:
   name: aws #cloud provider
-  region: ap-northeast-1 #region (mumbai)
-  memorySize: 5124 #memory usage
+  region: ap-northeast-1 
+  memorySize: 3000
   timeout: 300
 
 functions:
